@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>Cebu Traffic</title>
+		<link rel='stylesheet' href='stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='stylesheets/flat-ui.css' />
+		<link rel='stylesheet' href='stylesheets/style.css' />
+    <link type="text/css" rel="stylesheet" href="stylesheets/jquery.mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/jquery.mmenu.positioning.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+    <center>
+      Select a server to connect:
+      <input id="url" type="text"></input>
+      <button onClick="goTo()">Go</button>
+      <script>
+        function goTo(){
+          window.location.href = "http://"+$("#url").val();
+        }
+      </script>
+    </center>
+	</body>
+</html>
